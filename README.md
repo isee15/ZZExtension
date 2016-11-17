@@ -1,9 +1,11 @@
 # ZZExtension
-# What is it
 [Xcode Source Editor Extension](https://developer.apple.com/videos/play/wwdc2016/414/)
 `Xcode 8` Comment Shortcut Disabled sometimes.
 Solution is 'sudo /usr/libexec/xpccachectl' and reboot
 It's boring. So I write the extension
+
+# Swift 3.0
+[![Language](https://img.shields.io/badge/language-Swift%203.0-orange.svg)](https://swift.org/)
 
 # Features
 - [x] Comment Selections
