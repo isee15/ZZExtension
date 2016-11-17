@@ -27,3 +27,4 @@ It's boring. So I write the extension
 
 # Reference
 https://github.com/cyanzhong/xTextHandler/
+
