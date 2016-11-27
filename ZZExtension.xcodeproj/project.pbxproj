@@ -17,6 +17,15 @@
 		B33E3BEF1D90E80D0025F25E /* Knife.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B33E3BE11D90E80C0025F25E /* Knife.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B3C180B21DD1B64D003C8263 /* app.icns in Resources */ = {isa = PBXBuildFile; fileRef = B3C180B11DD1B64D003C8263 /* app.icns */; };
 		B3C180B41DD1B84D003C8263 /* readme@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C180B31DD1B84D003C8263 /* readme@2x.png */; };
+		B3F124951DE93CDF0008636E /* ToolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F124931DE93CDF0008636E /* ToolViewController.swift */; };
+		B3F1249B1DE969CD0008636E /* ToolWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F124991DE969CD0008636E /* ToolWorkViewController.swift */; };
+		B3F1249C1DE969CD0008636E /* ToolWorkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3F1249A1DE969CD0008636E /* ToolWorkViewController.xib */; };
+		B3F1249E1DE97F950008636E /* CommandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F1249D1DE97F950008636E /* CommandModel.swift */; };
+		B3F124A11DE98A590008636E /* JsonOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F124A01DE98A590008636E /* JsonOperation.swift */; };
+		B3F124A31DE98AFD0008636E /* CommandOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F124A21DE98AFD0008636E /* CommandOperation.swift */; };
+		B3F124A51DEAB0470008636E /* UrlOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F124A41DEAB0470008636E /* UrlOperation.swift */; };
+		B3F124A71DEAB3CA0008636E /* TimestampOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F124A61DEAB3CA0008636E /* TimestampOperation.swift */; };
+		B3F124A91DEABA140008636E /* Base64Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F124A81DEABA140008636E /* Base64Operation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +76,15 @@
 		B33E3BEC1D90E80D0025F25E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3C180B11DD1B64D003C8263 /* app.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = app.icns; path = ZZExtension/app.icns; sourceTree = "<group>"; };
 		B3C180B31DD1B84D003C8263 /* readme@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "readme@2x.png"; path = "ZZExtension/readme@2x.png"; sourceTree = "<group>"; };
+		B3F124931DE93CDF0008636E /* ToolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolViewController.swift; sourceTree = "<group>"; };
+		B3F124991DE969CD0008636E /* ToolWorkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolWorkViewController.swift; sourceTree = "<group>"; };
+		B3F1249A1DE969CD0008636E /* ToolWorkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToolWorkViewController.xib; sourceTree = "<group>"; };
+		B3F1249D1DE97F950008636E /* CommandModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandModel.swift; sourceTree = "<group>"; };
+		B3F124A01DE98A590008636E /* JsonOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonOperation.swift; sourceTree = "<group>"; };
+		B3F124A21DE98AFD0008636E /* CommandOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandOperation.swift; sourceTree = "<group>"; };
+		B3F124A41DEAB0470008636E /* UrlOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlOperation.swift; sourceTree = "<group>"; };
+		B3F124A61DEAB3CA0008636E /* TimestampOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimestampOperation.swift; sourceTree = "<group>"; };
+		B3F124A81DEABA140008636E /* Base64Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base64Operation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,10 +139,15 @@
 		B33E3BC11D90E7D50025F25E /* ZZExtension */ = {
 			isa = PBXGroup;
 			children = (
+				B3F1249F1DE98A210008636E /* Operation */,
 				B33E3BC21D90E7D50025F25E /* AppDelegate.swift */,
 				B33E3BC41D90E7D50025F25E /* Assets.xcassets */,
 				B33E3BC61D90E7D50025F25E /* MainMenu.xib */,
 				B33E3BC91D90E7D50025F25E /* Info.plist */,
+				B3F124931DE93CDF0008636E /* ToolViewController.swift */,
+				B3F124991DE969CD0008636E /* ToolWorkViewController.swift */,
+				B3F1249A1DE969CD0008636E /* ToolWorkViewController.xib */,
+				B3F1249D1DE97F950008636E /* CommandModel.swift */,
 			);
 			path = ZZExtension;
 			sourceTree = "<group>";
@@ -163,6 +186,18 @@
 				B33E3BE71D90E80D0025F25E /* Knife.entitlements */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3F1249F1DE98A210008636E /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				B3F124A01DE98A590008636E /* JsonOperation.swift */,
+				B3F124A21DE98AFD0008636E /* CommandOperation.swift */,
+				B3F124A41DEAB0470008636E /* UrlOperation.swift */,
+				B3F124A61DEAB3CA0008636E /* TimestampOperation.swift */,
+				B3F124A81DEABA140008636E /* Base64Operation.swift */,
+			);
+			name = Operation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,7 +264,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = isee15;
 				TargetAttributes = {
 					B33E3BBE1D90E7D50025F25E = {
@@ -277,6 +312,7 @@
 				B3C180B41DD1B84D003C8263 /* readme@2x.png in Resources */,
 				B33E3BC51D90E7D50025F25E /* Assets.xcassets in Resources */,
 				B33E3BC81D90E7D50025F25E /* MainMenu.xib in Resources */,
+				B3F1249C1DE969CD0008636E /* ToolWorkViewController.xib in Resources */,
 				B3C180B21DD1B64D003C8263 /* app.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,7 +338,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3F124A71DEAB3CA0008636E /* TimestampOperation.swift in Sources */,
+				B3F1249B1DE969CD0008636E /* ToolWorkViewController.swift in Sources */,
+				B3F124A11DE98A590008636E /* JsonOperation.swift in Sources */,
+				B3F124A91DEABA140008636E /* Base64Operation.swift in Sources */,
+				B3F1249E1DE97F950008636E /* CommandModel.swift in Sources */,
+				B3F124951DE93CDF0008636E /* ToolViewController.swift in Sources */,
+				B3F124A51DEAB0470008636E /* UrlOperation.swift in Sources */,
 				B33E3BC31D90E7D50025F25E /* AppDelegate.swift in Sources */,
+				B3F124A31DE98AFD0008636E /* CommandOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +412,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -417,6 +462,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

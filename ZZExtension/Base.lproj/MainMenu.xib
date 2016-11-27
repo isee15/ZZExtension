@@ -3,7 +3,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
-        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -19,6 +18,11 @@
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <viewController id="lLw-xu-FOC" customClass="ToolViewController" customModule="ZZExtension" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="EiT-Mj-1SZ" id="pZ1-BI-lQy"/>
+            </connections>
+        </viewController>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
                 <menuItem title="ZZExtension" id="1Xt-HY-uBw">
@@ -683,38 +687,13 @@
         <window title="ZZExtension" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
+            <rect key="contentRect" x="335" y="390" width="668" height="507"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
-            <view key="contentView" wantsLayer="YES" misplaced="YES" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
-                <autoresizingMask key="autoresizingMask"/>
-                <subviews>
-                    <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5OH-B2-fhT">
-                        <rect key="frame" x="0.0" y="0.0" width="668" height="507"/>
-                        <subviews>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CYH-AO-AVJ">
-                                <rect key="frame" x="0.0" y="0.0" width="668" height="507"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="readme" id="iiC-z6-fqn"/>
-                            </imageView>
-                        </subviews>
-                        <visibilityPriorities>
-                            <integer value="1000"/>
-                        </visibilityPriorities>
-                        <customSpacing>
-                            <real value="3.4028234663852886e+38"/>
-                        </customSpacing>
-                    </stackView>
-                </subviews>
-                <constraints>
-                    <constraint firstItem="5OH-B2-fhT" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="7Cd-gI-HWG"/>
-                    <constraint firstItem="5OH-B2-fhT" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="L9U-Ly-Tde"/>
-                    <constraint firstAttribute="trailing" secondItem="5OH-B2-fhT" secondAttribute="trailing" id="haI-yH-qTi"/>
-                    <constraint firstAttribute="bottom" secondItem="5OH-B2-fhT" secondAttribute="bottom" id="i2m-IA-S8c"/>
-                </constraints>
+            <value key="minSize" type="size" width="640" height="480"/>
+            <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="668" height="507"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             </view>
         </window>
     </objects>
-    <resources>
-        <image name="readme" width="668" height="507"/>
-    </resources>
 </document>
