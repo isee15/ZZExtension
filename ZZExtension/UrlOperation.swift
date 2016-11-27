@@ -10,8 +10,8 @@ import Cocoa
 
 class UrlOperation: NSObject, CommandOperation {
 
-    func doAction(input: String) -> String {
-        return input.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed)!
+    func doAction(input: String) -> AnyObject {
+        return input.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed)! as AnyObject
     }
 
     func reverseAction(input: String) -> String {

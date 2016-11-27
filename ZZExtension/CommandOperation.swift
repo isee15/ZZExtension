@@ -9,7 +9,7 @@
 import Cocoa
 
 protocol CommandOperation {
-    func doAction(input: String) -> String
+    func doAction(input: String) -> AnyObject
 
     func reverseAction(input: String) -> String
 }

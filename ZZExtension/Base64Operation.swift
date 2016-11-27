@@ -9,8 +9,8 @@
 import Cocoa
 
 class Base64Operation: NSObject, CommandOperation {
-    func doAction(input: String) -> String {
-        return Data(input.utf8).base64EncodedString()
+    func doAction(input: String) -> AnyObject {
+        return Data(input.utf8).base64EncodedString() as AnyObject
     }
 
     func reverseAction(input: String) -> String {

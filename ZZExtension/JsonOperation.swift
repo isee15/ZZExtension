@@ -11,16 +11,16 @@ import CoreFoundation
 
 class JsonOperation: NSObject, CommandOperation {
 
-    func doAction(input: String) -> String {
+    func doAction(input: String) -> AnyObject {
         if let data = input.data(using: String.Encoding.utf8) {
             do {
                 let dict = try JSONSerialization.jsonObject(with: data, options: []) as? [String: AnyObject]
-                return self.jsonStringify(value: dict as AnyObject, prettyPrinted: true);
+                return self.jsonStringify(value: dict as AnyObject, prettyPrinted: true) as AnyObject;
             } catch let error as NSError {
-                return error.localizedDescription
+                return error.localizedDescription as AnyObject
             }
         }
-        return input;
+        return input as AnyObject;
     }
 
     func reverseAction(input: String) -> String {

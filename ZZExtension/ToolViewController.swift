@@ -44,6 +44,11 @@ class ToolViewController: NSViewController {
         toolItem.operation = Base64Operation()
         tools.append(toolItem)
 
+        toolItem = ToolWorkViewController()
+        toolItem.tabTitle = "QRCode"
+        toolItem.operation = QRCodeOperation()
+        tools.append(toolItem)
+
         for toolItem in tools {
             let item = NSTabViewItem(viewController: toolItem)
             item.label = toolItem.tabTitle

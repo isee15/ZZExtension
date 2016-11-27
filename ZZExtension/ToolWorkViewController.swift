@@ -22,7 +22,12 @@ class ToolWorkViewController: NSViewController {
 
     @IBAction func onDo(_: AnyObject) {
         let output = self.operation.doAction(input: self.inputTextView.string!)
-        self.outputTextView.string = output
+        if (output is String) {
+            self.outputTextView.string = output as? String
+        } else if output is NSAttributedString {
+            self.outputTextView.string = ""
+            self.outputTextView.textStorage?.setAttributedString(output as! NSAttributedString)
+        }
     }
 
     @IBAction func onReverseDo(_: AnyObject) {

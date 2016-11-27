@@ -26,6 +26,7 @@
 		B3F124A51DEAB0470008636E /* UrlOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F124A41DEAB0470008636E /* UrlOperation.swift */; };
 		B3F124A71DEAB3CA0008636E /* TimestampOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F124A61DEAB3CA0008636E /* TimestampOperation.swift */; };
 		B3F124A91DEABA140008636E /* Base64Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F124A81DEABA140008636E /* Base64Operation.swift */; };
+		B3F124AB1DEAC32A0008636E /* QRCodeOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F124AA1DEAC32A0008636E /* QRCodeOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		B3F124A41DEAB0470008636E /* UrlOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlOperation.swift; sourceTree = "<group>"; };
 		B3F124A61DEAB3CA0008636E /* TimestampOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimestampOperation.swift; sourceTree = "<group>"; };
 		B3F124A81DEABA140008636E /* Base64Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base64Operation.swift; sourceTree = "<group>"; };
+		B3F124AA1DEAC32A0008636E /* QRCodeOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 				B3F124A41DEAB0470008636E /* UrlOperation.swift */,
 				B3F124A61DEAB3CA0008636E /* TimestampOperation.swift */,
 				B3F124A81DEABA140008636E /* Base64Operation.swift */,
+				B3F124AA1DEAC32A0008636E /* QRCodeOperation.swift */,
 			);
 			name = Operation;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3F124A71DEAB3CA0008636E /* TimestampOperation.swift in Sources */,
+				B3F124AB1DEAC32A0008636E /* QRCodeOperation.swift in Sources */,
 				B3F1249B1DE969CD0008636E /* ToolWorkViewController.swift in Sources */,
 				B3F124A11DE98A590008636E /* JsonOperation.swift in Sources */,
 				B3F124A91DEABA140008636E /* Base64Operation.swift in Sources */,

@@ -9,12 +9,12 @@
 import Cocoa
 
 class TimestampOperation: NSObject, CommandOperation {
-    func doAction(input: String) -> String {
+    func doAction(input: String) -> AnyObject {
         let longTime = Double(input)
         let dateTime = Date.init(timeIntervalSince1970: longTime!)
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyyMMdd HH:mm:ss.SSS"
-        return formatter.string(from: dateTime)
+        return formatter.string(from: dateTime) as AnyObject
     }
 
     func reverseAction(input: String) -> String {
