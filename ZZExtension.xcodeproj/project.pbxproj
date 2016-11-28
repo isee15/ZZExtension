@@ -27,6 +27,7 @@
 		B3F124A71DEAB3CA0008636E /* TimestampOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F124A61DEAB3CA0008636E /* TimestampOperation.swift */; };
 		B3F124A91DEABA140008636E /* Base64Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F124A81DEABA140008636E /* Base64Operation.swift */; };
 		B3F124AB1DEAC32A0008636E /* QRCodeOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F124AA1DEAC32A0008636E /* QRCodeOperation.swift */; };
+		B3F124AD1DEC0BBA0008636E /* command.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3F124AC1DEC0BBA0008636E /* command.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		B3F124A61DEAB3CA0008636E /* TimestampOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimestampOperation.swift; sourceTree = "<group>"; };
 		B3F124A81DEABA140008636E /* Base64Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base64Operation.swift; sourceTree = "<group>"; };
 		B3F124AA1DEAC32A0008636E /* QRCodeOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeOperation.swift; sourceTree = "<group>"; };
+		B3F124AC1DEC0BBA0008636E /* command.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = command.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				B3F124991DE969CD0008636E /* ToolWorkViewController.swift */,
 				B3F1249A1DE969CD0008636E /* ToolWorkViewController.xib */,
 				B3F1249D1DE97F950008636E /* CommandModel.swift */,
+				B3F124AC1DEC0BBA0008636E /* command.plist */,
 			);
 			path = ZZExtension;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3F124AD1DEC0BBA0008636E /* command.plist in Resources */,
 				B3C180B41DD1B84D003C8263 /* readme@2x.png in Resources */,
 				B33E3BC51D90E7D50025F25E /* Assets.xcassets in Resources */,
 				B33E3BC81D90E7D50025F25E /* MainMenu.xib in Resources */,

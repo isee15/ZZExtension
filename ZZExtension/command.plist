@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Operations</key>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string>Json</string>
+			<key>Command</key>
+			<string>JsonOperation</string>
+			<key>View</key>
+			<string>ToolWorkViewController</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Url</string>
+			<key>Command</key>
+			<string>UrlOperation</string>
+			<key>View</key>
+			<string>ToolWorkViewController</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Base64</string>
+			<key>Command</key>
+			<string>Base64Operation</string>
+			<key>View</key>
+			<string>ToolWorkViewController</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Timestamp</string>
+			<key>Command</key>
+			<string>TimestampOperation</string>
+			<key>View</key>
+			<string>ToolWorkViewController</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>QRCode</string>
+			<key>Command</key>
+			<string>QRCodeOperation</string>
+			<key>View</key>
+			<string>ToolWorkViewController</string>
+		</dict>
+	</array>
+</dict>
+</plist>
