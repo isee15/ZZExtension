@@ -10,7 +10,7 @@ It's boring. So I write the extension
 # Features
 - [x] Comment Selections
 - [x] Format Json
-- [ ] Encode/Decode
+- [x] Encode/Decode(URL,Json,Timestamp,Base64,QRCode)
 
 # Build
 0. Install `Xcode 8`
@@ -24,6 +24,9 @@ It's boring. So I write the extension
 
 ## Comment Selections
 ![image](./snap.png)
+
+## Encode/Decode Toolset
+![image](./snap2.png)
 
 # Reference
 https://github.com/cyanzhong/xTextHandler/
