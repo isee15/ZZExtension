@@ -20,8 +20,8 @@ class TimestampOperation: NSObject, CommandOperation {
     func reverseAction(input: String) -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyyMMdd HH:mm:ss.SSS"
-        let dateTime = formatter.date(from: input)
-        return String(format: "%.3f", (dateTime?.timeIntervalSince1970)!)
+        guard let dateTime = formatter.date(from: input) else { return "not yyyyMMdd HH:mm:ss.SSS format" }
+        return String(format: "%.3f", (dateTime.timeIntervalSince1970))
     }
 
 }

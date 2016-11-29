@@ -14,8 +14,9 @@ class Base64Operation: NSObject, CommandOperation {
     }
 
     func reverseAction(input: String) -> String {
-        let data = Data(base64Encoded: input)
-        return String(data: data!, encoding: .utf8)!
+        guard let data = Data(base64Encoded: input) else { return "not base64 format" }
+        let ret = String(data: (data), encoding: .utf8)
+        return ret==nil ? "not base64 format" : ret!
     }
 
 }
