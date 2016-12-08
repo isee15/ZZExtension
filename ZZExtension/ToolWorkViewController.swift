@@ -11,7 +11,7 @@ import Cocoa
 class ToolWorkViewController: NSViewController {
     
     var operation: CommandOperation?
-    var tabTitle: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.

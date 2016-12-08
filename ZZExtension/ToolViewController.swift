@@ -30,8 +30,9 @@ class ToolViewController: NSViewController {
         for dictItem in commandDict?["Operations"] as! NSArray {
             let dict = dictItem as! NSDictionary
             let toolItem = dynamicCreateInstance(className: dict["View"] as! String)
-            toolItem.setValue(dict["Title"], forKey: "tabTitle")
-            (toolItem as! ToolWorkViewController).operation = dynamicCreateInstance(className: dict["Command"] as! String) as? CommandOperation
+            if (dict["Command"] != nil) {
+                (toolItem as! ToolWorkViewController).operation = dynamicCreateInstance(className: dict["Command"] as! String) as? CommandOperation
+            }
             let item = NSTabViewItem(viewController: toolItem as! NSViewController)
             item.label = dict["Title"] as! String
             self.tab.addTabViewItem(item)

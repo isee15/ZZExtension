@@ -34,11 +34,11 @@ class QRCodeOperation: NSObject, CommandOperation {
     }
 
     func generateQRCode(from string: String) -> NSImage? {
-        let data = string.data(using: String.Encoding.ascii)
+        let data = string.data(using: String.Encoding.utf8)
 
         if let filter = CIFilter(name: "CIQRCodeGenerator") {
             filter.setValue(data, forKey: "inputMessage")
-            let transform = CGAffineTransform(scaleX: 3, y: 3)
+            let transform = CGAffineTransform(scaleX: 6, y: 6)
             let rep = NSCIImageRep(ciImage: filter.outputImage!.applying(transform))
             let outImage = NSImage()
             outImage.addRepresentation(rep)

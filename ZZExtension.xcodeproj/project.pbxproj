@@ -17,6 +17,8 @@
 		B33E3BEF1D90E80D0025F25E /* Knife.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B33E3BE11D90E80C0025F25E /* Knife.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B3C180B21DD1B64D003C8263 /* app.icns in Resources */ = {isa = PBXBuildFile; fileRef = B3C180B11DD1B64D003C8263 /* app.icns */; };
 		B3C180B41DD1B84D003C8263 /* readme@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C180B31DD1B84D003C8263 /* readme@2x.png */; };
+		B3CF26C01DF8340600644E1A /* ZZLinkMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CF26BE1DF8340600644E1A /* ZZLinkMapViewController.swift */; };
+		B3CF26C11DF8340600644E1A /* ZZLinkMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3CF26BF1DF8340600644E1A /* ZZLinkMapViewController.xib */; };
 		B3F124951DE93CDF0008636E /* ToolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F124931DE93CDF0008636E /* ToolViewController.swift */; };
 		B3F1249B1DE969CD0008636E /* ToolWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F124991DE969CD0008636E /* ToolWorkViewController.swift */; };
 		B3F1249C1DE969CD0008636E /* ToolWorkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3F1249A1DE969CD0008636E /* ToolWorkViewController.xib */; };
@@ -78,6 +80,8 @@
 		B33E3BEC1D90E80D0025F25E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3C180B11DD1B64D003C8263 /* app.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = app.icns; path = ZZExtension/app.icns; sourceTree = "<group>"; };
 		B3C180B31DD1B84D003C8263 /* readme@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "readme@2x.png"; path = "ZZExtension/readme@2x.png"; sourceTree = "<group>"; };
+		B3CF26BE1DF8340600644E1A /* ZZLinkMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZLinkMapViewController.swift; sourceTree = "<group>"; };
+		B3CF26BF1DF8340600644E1A /* ZZLinkMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZZLinkMapViewController.xib; sourceTree = "<group>"; };
 		B3F124931DE93CDF0008636E /* ToolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolViewController.swift; sourceTree = "<group>"; };
 		B3F124991DE969CD0008636E /* ToolWorkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolWorkViewController.swift; sourceTree = "<group>"; };
 		B3F1249A1DE969CD0008636E /* ToolWorkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToolWorkViewController.xib; sourceTree = "<group>"; };
@@ -143,6 +147,7 @@
 		B33E3BC11D90E7D50025F25E /* ZZExtension */ = {
 			isa = PBXGroup;
 			children = (
+				B3CF26BB1DF8335400644E1A /* LinkMap */,
 				B3F1249F1DE98A210008636E /* Operation */,
 				B33E3BC21D90E7D50025F25E /* AppDelegate.swift */,
 				B33E3BC41D90E7D50025F25E /* Assets.xcassets */,
@@ -191,6 +196,15 @@
 				B33E3BE71D90E80D0025F25E /* Knife.entitlements */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3CF26BB1DF8335400644E1A /* LinkMap */ = {
+			isa = PBXGroup;
+			children = (
+				B3CF26BE1DF8340600644E1A /* ZZLinkMapViewController.swift */,
+				B3CF26BF1DF8340600644E1A /* ZZLinkMapViewController.xib */,
+			);
+			name = LinkMap;
 			sourceTree = "<group>";
 		};
 		B3F1249F1DE98A210008636E /* Operation */ = {
@@ -320,6 +334,7 @@
 				B33E3BC51D90E7D50025F25E /* Assets.xcassets in Resources */,
 				B33E3BC81D90E7D50025F25E /* MainMenu.xib in Resources */,
 				B3F1249C1DE969CD0008636E /* ToolWorkViewController.xib in Resources */,
+				B3CF26C11DF8340600644E1A /* ZZLinkMapViewController.xib in Resources */,
 				B3C180B21DD1B64D003C8263 /* app.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,6 +370,7 @@
 				B3F124A51DEAB0470008636E /* UrlOperation.swift in Sources */,
 				B33E3BC31D90E7D50025F25E /* AppDelegate.swift in Sources */,
 				B3F124A31DE98AFD0008636E /* CommandOperation.swift in Sources */,
+				B3CF26C01DF8340600644E1A /* ZZLinkMapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -44,6 +44,12 @@
 			<key>View</key>
 			<string>ToolWorkViewController</string>
 		</dict>
+        <dict>
+            <key>Title</key>
+            <string>LinkMap</string>
+            <key>View</key>
+            <string>ZZLinkMapViewController</string>
+        </dict>
 	</array>
 </dict>
 </plist>
