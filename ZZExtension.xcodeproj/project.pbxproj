@@ -15,6 +15,9 @@
 		B33E3BE91D90E80D0025F25E /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33E3BE81D90E80D0025F25E /* SourceEditorExtension.swift */; };
 		B33E3BEB1D90E80D0025F25E /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33E3BEA1D90E80D0025F25E /* SourceEditorCommand.swift */; };
 		B33E3BEF1D90E80D0025F25E /* Knife.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B33E3BE11D90E80C0025F25E /* Knife.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B3799F451E289F2A00F71746 /* IDCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3799F431E289F2A00F71746 /* IDCardViewController.swift */; };
+		B3799F461E289F2A00F71746 /* IDCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3799F441E289F2A00F71746 /* IDCardViewController.xib */; };
+		B3799F481E28BDC500F71746 /* FakeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3799F471E28BDC500F71746 /* FakeUtil.swift */; };
 		B3C180B21DD1B64D003C8263 /* app.icns in Resources */ = {isa = PBXBuildFile; fileRef = B3C180B11DD1B64D003C8263 /* app.icns */; };
 		B3C180B41DD1B84D003C8263 /* readme@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3C180B31DD1B84D003C8263 /* readme@2x.png */; };
 		B3CF26C01DF8340600644E1A /* ZZLinkMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CF26BE1DF8340600644E1A /* ZZLinkMapViewController.swift */; };
@@ -78,6 +81,9 @@
 		B33E3BE81D90E80D0025F25E /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
 		B33E3BEA1D90E80D0025F25E /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
 		B33E3BEC1D90E80D0025F25E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3799F431E289F2A00F71746 /* IDCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDCardViewController.swift; sourceTree = "<group>"; };
+		B3799F441E289F2A00F71746 /* IDCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IDCardViewController.xib; sourceTree = "<group>"; };
+		B3799F471E28BDC500F71746 /* FakeUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeUtil.swift; sourceTree = "<group>"; };
 		B3C180B11DD1B64D003C8263 /* app.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = app.icns; path = ZZExtension/app.icns; sourceTree = "<group>"; };
 		B3C180B31DD1B84D003C8263 /* readme@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "readme@2x.png"; path = "ZZExtension/readme@2x.png"; sourceTree = "<group>"; };
 		B3CF26BE1DF8340600644E1A /* ZZLinkMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZLinkMapViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +153,7 @@
 		B33E3BC11D90E7D50025F25E /* ZZExtension */ = {
 			isa = PBXGroup;
 			children = (
+				B3799F421E289EF300F71746 /* Op */,
 				B3CF26BB1DF8335400644E1A /* LinkMap */,
 				B3F1249F1DE98A210008636E /* Operation */,
 				B33E3BC21D90E7D50025F25E /* AppDelegate.swift */,
@@ -196,6 +203,16 @@
 				B33E3BE71D90E80D0025F25E /* Knife.entitlements */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3799F421E289EF300F71746 /* Op */ = {
+			isa = PBXGroup;
+			children = (
+				B3799F431E289F2A00F71746 /* IDCardViewController.swift */,
+				B3799F441E289F2A00F71746 /* IDCardViewController.xib */,
+				B3799F471E28BDC500F71746 /* FakeUtil.swift */,
+			);
+			name = Op;
 			sourceTree = "<group>";
 		};
 		B3CF26BB1DF8335400644E1A /* LinkMap */ = {
@@ -336,6 +353,7 @@
 				B3F1249C1DE969CD0008636E /* ToolWorkViewController.xib in Resources */,
 				B3CF26C11DF8340600644E1A /* ZZLinkMapViewController.xib in Resources */,
 				B3C180B21DD1B64D003C8263 /* app.icns in Resources */,
+				B3799F461E289F2A00F71746 /* IDCardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +381,7 @@
 				B3F124A71DEAB3CA0008636E /* TimestampOperation.swift in Sources */,
 				B3F124AB1DEAC32A0008636E /* QRCodeOperation.swift in Sources */,
 				B3F1249B1DE969CD0008636E /* ToolWorkViewController.swift in Sources */,
+				B3799F481E28BDC500F71746 /* FakeUtil.swift in Sources */,
 				B3F124A11DE98A590008636E /* JsonOperation.swift in Sources */,
 				B3F124A91DEABA140008636E /* Base64Operation.swift in Sources */,
 				B3F1249E1DE97F950008636E /* CommandModel.swift in Sources */,
@@ -371,6 +390,7 @@
 				B33E3BC31D90E7D50025F25E /* AppDelegate.swift in Sources */,
 				B3F124A31DE98AFD0008636E /* CommandOperation.swift in Sources */,
 				B3CF26C01DF8340600644E1A /* ZZLinkMapViewController.swift in Sources */,
+				B3799F451E289F2A00F71746 /* IDCardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

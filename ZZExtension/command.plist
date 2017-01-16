@@ -36,6 +36,12 @@
 			<key>View</key>
 			<string>ToolWorkViewController</string>
 		</dict>
+        <dict>
+            <key>Title</key>
+            <string>身份证</string>
+            <key>View</key>
+            <string>IDCardViewController</string>
+        </dict>
 		<dict>
 			<key>Title</key>
 			<string>QRCode</string>
