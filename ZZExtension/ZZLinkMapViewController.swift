@@ -46,7 +46,7 @@ class ZZLinkMapViewController: NSViewController {
         panel.canChooseFiles = true
         
         panel.begin { (result) in
-            if result == NSFileHandlingPanelOKButton {
+            if result.rawValue == NSFileHandlingPanelOKButton {
                 let document = panel.url
                 self.filePathField.stringValue = (document?.path)!
                 self.linkMapFileURL = document
@@ -75,7 +75,7 @@ class ZZLinkMapViewController: NSViewController {
                 return s1.size > s2.size
             })
             var output = ""
-            if self.groupButton.state == 1 {
+            if self.groupButton.state.rawValue == 1 {
                 output = self.buildCombinationResultWithSymbols(sortSymbols)
             }
             else {
@@ -221,7 +221,7 @@ class ZZLinkMapViewController: NSViewController {
         let alert = NSAlert()
         alert.messageText = msg
         alert.addButton(withTitle: "确定")
-        alert.beginSheetModal(for: NSApplication.shared().windows[0], completionHandler: { (_) in
+        alert.beginSheetModal(for: NSApplication.shared.windows[0], completionHandler: { (_) in
             
         })
     }

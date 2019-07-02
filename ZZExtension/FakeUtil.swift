@@ -33,7 +33,7 @@ class FakeUtil: NSObject {
     static func computeCheckSum(_ idCardNo: String) -> String {
         let R:[Int]          = [7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2]
         let checksumMap:[String] = ["1", "0", "X", "9", "8", "7", "6", "5", "4", "3", "2"]
-        let arr = Array(idCardNo.characters)[0...16]
+        let arr = Array(idCardNo)[0...16]
         let sum = R.enumerated().reduce(0) {
             return $0 + Int(String(arr[$1.0]))! * $1.1
         }

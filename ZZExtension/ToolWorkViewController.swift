@@ -21,9 +21,9 @@ class ToolWorkViewController: NSViewController {
     @IBOutlet var inputTextView: NSTextView!
 
     @IBAction func onDo(_: AnyObject) {
-        let output = self.operation?.doAction(input: self.inputTextView.string!)
+        let output = self.operation?.doAction(input: self.inputTextView.string)
         if (output is String) {
-            self.outputTextView.string = output as? String
+            self.outputTextView.string = output as? String ?? ""
         } else if output is NSAttributedString {
             self.outputTextView.string = ""
             self.outputTextView.textStorage?.setAttributedString(output as! NSAttributedString)
@@ -31,8 +31,8 @@ class ToolWorkViewController: NSViewController {
     }
 
     @IBAction func onReverseDo(_: AnyObject) {
-        let input = self.operation?.reverseAction(input: self.outputTextView.string!)
-        self.inputTextView.string = input
+        let input = self.operation?.reverseAction(input: self.outputTextView.string)
+        self.inputTextView.string = input!
     }
 
 }

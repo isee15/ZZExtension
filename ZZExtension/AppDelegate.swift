@@ -37,7 +37,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     /** Gets called when the App launches/opens via URL. */
-    func handleURLEvent(_ event: NSAppleEventDescriptor, withReply reply: NSAppleEventDescriptor) {
+    @objc func handleURLEvent(_ event: NSAppleEventDescriptor, withReply reply: NSAppleEventDescriptor) {
 //        let urlString = event.paramDescriptor(forKeyword: AEKeyword(keyDirectObject))?.stringValue
 //        let alert = NSAlert();
 //        alert.messageText = (urlString)!

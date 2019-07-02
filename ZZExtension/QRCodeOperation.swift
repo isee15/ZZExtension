@@ -22,7 +22,7 @@ class QRCodeOperation: NSObject, CommandOperation {
     }
 
     func reverseAction(input: String) -> String {
-        let pasteboard = NSPasteboard.general()
+        let pasteboard = NSPasteboard.general
         if let images = pasteboard.readObjects(forClasses: [NSImage.self], options: nil) as? [NSImage] {
             for image in images {
                 let imageData = image.tiffRepresentation!
@@ -39,7 +39,7 @@ class QRCodeOperation: NSObject, CommandOperation {
         if let filter = CIFilter(name: "CIQRCodeGenerator") {
             filter.setValue(data, forKey: "inputMessage")
             let transform = CGAffineTransform(scaleX: 6, y: 6)
-            let rep = NSCIImageRep(ciImage: filter.outputImage!.applying(transform))
+            let rep = NSCIImageRep(ciImage: filter.outputImage!.transformed(by: transform))
             let outImage = NSImage()
             outImage.addRepresentation(rep)
             return outImage
@@ -67,16 +67,16 @@ class QRCodeOperation: NSObject, CommandOperation {
     func drawHighlightOverlayForPoints(image: CIImage, topLeft: CGPoint, topRight: CGPoint,
                                        bottomLeft: CGPoint, bottomRight: CGPoint) -> CIImage {
         var overlay = CIImage(color: CIColor(red: 1.0, green: 0, blue: 0, alpha: 0.5))
-        overlay = overlay.cropping(to: image.extent)
+        overlay = overlay.cropped(to: image.extent)
         overlay = overlay.applyingFilter("CIPerspectiveTransformWithExtent",
-                withInputParameters: [
+                                         parameters: [
                         "inputExtent": CIVector(cgRect: image.extent),
                         "inputTopLeft": CIVector(cgPoint: topLeft),
                         "inputTopRight": CIVector(cgPoint: topRight),
                         "inputBottomLeft": CIVector(cgPoint: bottomLeft),
                         "inputBottomRight": CIVector(cgPoint: bottomRight)
                 ])
-        return overlay.compositingOverImage(image)
+        return overlay.composited(over: image)
     }
 
 }

@@ -69,7 +69,7 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
             }
 
         } else if commandIdentifier == "cn.z.ZZExtension.Knife.Encode" {
-            NSWorkspace.shared().open(URL(string: "knife://encode")!)
+            NSWorkspace.shared.open(URL(string: "knife://encode")!)
         }
         completionHandler(nil)
 
